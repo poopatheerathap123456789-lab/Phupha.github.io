@@ -2,6 +2,7 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
+    <title>Game Banner</title>
     <style>
         /* ล้างค่าขอบและตั้งค่าหน้าจอเกมให้เต็มพื้นที่ 100% */
         html, body {
@@ -12,11 +13,11 @@
             overflow: hidden;
             background-color: black;
         }
-        /* ขยายรูปให้พอดีและเต็มจอเกม */
+        /* ขยายรูปให้เต็มจอโดยรักษาสัดส่วนเดิม ไม่ทำให้ภาพยืด */
         .game-banner {
             width: 100%;
             height: 100%;
-            object-fit: fill; /* ปรับให้รูปยืดเต็มพื้นที่จอพอดี ไม่เหลือขอบดำ */
+            object-fit: cover; /* ปรับให้เต็มจอโดยไม่ยืดภาพ */
         }
     </style>
 </head>
