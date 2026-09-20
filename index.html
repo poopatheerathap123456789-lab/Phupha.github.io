@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>เว็บของฉัน</title>
+    <style>
+        /* ล้างค่าขอบของหน้าเว็บเพื่อให้รูปเต็มจอพอดี */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* ป้องกันการเลื่อนหน้าจอ */
+            background-color: black; /* สีพื้นหลังเผื่อสัดส่วนรูปไม่พอดี */
+        }
+        /* ปรับรูปให้ขยายเต็มหน้าจออัตโนมัติ */
+        .fullscreen-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* จัดรูปให้เต็มจอโดยสัดส่วนไม่เพี้ยน */
+        }
+    </style>
 </head>
 <body>
-    <h1>รูปภาพจาก GitHub ของผม</h1>
-    <!-- ใช้ลิงก์แบบ Raw จาก GitHub โดยตรงเพื่อป้องกันปัญหาหาไฟล์ไม่เจอ -->
-    <img src="https://raw.githubusercontent.com/poopatheerathap123456789-lab/Phupha.github.io/main/mainmenu_banner.png" alt="MainMenu Banner" style="max-width: 100%; height: auto;">
+    <!-- ดึงรูปจาก GitHub ของคุณแบบเต็มจอ -->
+    <img src="https://raw.githubusercontent.com/poopatheerathap123456789-lab/Phupha.github.io/main/mainmenu_banner.png" alt="MainMenu Banner" class="fullscreen-img">
 </body>
 </html>
